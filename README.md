@@ -37,7 +37,7 @@ Ele foi pensado para quem faz live e precisa acompanhar o chat sem abrir varias 
 - Reconexao automatica quando o chat cai.
 - Suporte a emojis e emotes.
 - Configuracoes salvas automaticamente.
-- Distribuicao em `.exe`, sem precisar instalar.
+- Distribuicao em `.exe`, sem precisar instalar Python.
 
 ## Download
 
@@ -65,7 +65,29 @@ DaemonHub-1.5.0.exe
 4. Configure suas plataformas e links.
 5. Posicione o overlay onde preferir.
 
-No Windows, pode aparecer um aviso de seguranca por ser um executavel baixado da internet. Se voce baixou pela pagina oficial de releases deste repositorio, confirme a execucao para continuar.
+## Aviso do Windows SmartScreen
+
+O Windows pode mostrar um aviso de seguranca ao abrir o DaemonHub, principalmente porque o app ainda nao possui uma assinatura digital paga.
+
+Isso pode acontecer com aplicativos novos ou independentes baixados da internet. Para sua seguranca, baixe o DaemonHub apenas pelos links oficiais deste repositorio.
+
+## Verificacao do arquivo
+
+Cada versao publicada possui um hash SHA256 proprio. Esse hash muda sempre que o `.exe` muda, entao ele deve ser conferido de acordo com a versao baixada.
+
+SHA256 da versao `1.5.0`:
+
+```text
+6EB637F6C8FE9AF7FAEE642114BDAB3DA1D9D7ECA731BDFCCF2B3995F3346A27  DaemonHub-1.5.0.exe
+```
+
+Para conferir no Windows, abra o PowerShell na pasta onde baixou o arquivo e rode:
+
+```powershell
+Get-FileHash -Algorithm SHA256 .\DaemonHub-1.5.0.exe
+```
+
+O valor mostrado deve ser igual ao hash publicado na release.
 
 ## Links aceitos no DaemonHub
 
