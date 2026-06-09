@@ -37,7 +37,7 @@ Ele foi pensado para quem faz live e precisa acompanhar o chat sem abrir varias 
 - Reconexao automatica quando o chat cai.
 - Suporte a emojis e emotes.
 - Configuracoes salvas automaticamente.
-- Distribuicao em `.exe`, sem precisar instalar Python.
+- Distribuicao em `.exe`, sem precisar instalar.
 
 ## Download
 
