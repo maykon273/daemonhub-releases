@@ -67,43 +67,6 @@ DaemonHub-1.5.0.exe
 
 No Windows, pode aparecer um aviso de seguranca por ser um executavel baixado da internet. Se voce baixou pela pagina oficial de releases deste repositorio, confirme a execucao para continuar.
 
-## Padrao para publicar novas versoes
-
-Para o site detectar o download automaticamente, mantenha sempre o mesmo padrao:
-
-Tag do release:
-
-```text
-v1.5.0
-```
-
-Nome do arquivo no release:
-
-```text
-DaemonHub-1.5.0.exe
-```
-
-Quando lancar uma nova versao, por exemplo `1.6.0`, publique:
-
-```text
-Tag: v1.6.0
-Arquivo: DaemonHub-1.6.0.exe
-```
-
-Depois atualize apenas o `version.json` do site:
-
-```json
-{
-  "version": "1.6.0"
-}
-```
-
-O site vai montar automaticamente o link:
-
-```text
-https://github.com/maykon273/daemonhub-releases/releases/download/v1.6.0/DaemonHub-1.6.0.exe
-```
-
 ## Links aceitos no DaemonHub
 
 - `https://www.youtube.com/watch?v=ID`
@@ -122,11 +85,11 @@ Para o overlay aparecer corretamente sobre o jogo, prefira rodar o jogo em:
 
 Tela cheia exclusiva pode cobrir overlays externos em alguns jogos. Jogos com anticheat mais rigoroso tambem podem bloquear overlays.
 
-## Projeto
+## Atualizacoes
 
-Este repositorio e usado para distribuir as builds publicas do DaemonHub.
+As novas versoes do DaemonHub sao publicadas aqui na pagina de releases.
 
-Repositorio principal e site podem usar este repositorio como fonte dos downloads oficiais.
+Sempre que houver uma atualizacao, baixe o novo `.exe` pela versao mais recente e substitua a versao antiga.
 
 ---
 
